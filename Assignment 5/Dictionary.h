@@ -8,7 +8,7 @@
  *            
  * Class Invariant: Each element stored in this Dictionary is unique (no duplications allowed).
  *
- * Author: AL
+ * Author: Eshaan Virk + Asheesh Yadav
  * Date: Last modified: April 2024
  */
 
@@ -37,8 +37,7 @@ private:
 
   Profile * * hashTable = nullptr;               // HashTable - underlying data structure (array) of our Dictionary.
                                                  // HashTable is a pointer to an array of pointers to objects of Profile class.
-  unsigned int elementCount = 0;                 // Current number of elements stored in this Dictionary.
-
+  unsigned int elementCount = 0;                 // Current number of elements stored in this Dictionary. 
 
 public:
                                                 
@@ -60,10 +59,8 @@ public:
   
   // Hash Function
   // Description: Hashes the given indexingKey producing a "hash table index".
-  // Time Efficiency: For you to complete!
-  // Example of Time Efficiency: max(O(1),O(1),O(1),O(1)) = O(1)
-  // Space Efficiency: For you to complete!
-  // Example of Space Efficiency: O(1)
+  // Time Efficiency: O(n)
+  // Space Efficiency: O(1)
   unsigned int hashFunction( string indexingKey );
 
   // Description: Inserts an element into the Dictionary and increments "elementCount".
@@ -86,4 +83,4 @@ public:
   void printDictionary() const;
   
 }; // end Dictionary.h
-#endif  
+#endif
